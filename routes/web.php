@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Client Route
+// Pages
 Route::get('/', [ClientController::class, 'home'])->name('home');
+Route::get('/shop', [ClientController::class, 'shop'])->name('shop');
+Route::get('/cart', [ClientController::class, 'cart'])->name('cart');
+Route::get('/checkout', [ClientController::class, 'checkout'])->name('checkout');
