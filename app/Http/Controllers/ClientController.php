@@ -25,4 +25,8 @@ class ClientController extends Controller
     public function register(){
         return view('client.register');
     }
+
+    public function signin(){
+        return view('client.signin');
+    }
 }

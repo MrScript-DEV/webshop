@@ -50,7 +50,7 @@
                                 <label for="InputPassword1" class="mb-0">Password</label>
                                 <input type="password" class="form-control" id="InputPassword1" placeholder="Password"> </div>
                         </div>
-                        <button type="submit" class="btn hvr-hover">Register</button>
+                        <button type="submit" class="btn hvr-hover">Sign In</button>
                     </form>
                 </div>
             </div>
@@ -58,7 +58,7 @@
                 <div class="col-sm-6 col-lg-6 mb-3 offset-sm-3 offset-lg-3">
                     <div class="Account-address">
                         <div class="title-left">
-                            <h3>Register / Already have an account ? <a href="#">Sign In</a></h3>
+                            <h3>Sign In</h3>
                         </div>
                         <form class="needs-validation" >
                             <!-- <div class="row">
@@ -88,7 +88,7 @@
 
                             <div class="row">
                                 <div class="col-md-12 mb-12">
-                                    <input type="submit" value="Sign up" class="btn btn-default hvr-hover btn-cart w-100">
+                                    <input type="submit" value="Sign In" class="btn btn-default hvr-hover btn-cart w-100">
                                 </div>
                             </div>
                             <hr class="mb-1">
