@@ -19,3 +19,4 @@ Route::get('/', [ClientController::class, 'home'])->name('home');
 Route::get('/shop', [ClientController::class, 'shop'])->name('shop');
 Route::get('/cart', [ClientController::class, 'cart'])->name('cart');
 Route::get('/checkout', [ClientController::class, 'checkout'])->name('checkout');
+Route::get('/register', [ClientController::class, 'register'])->name('register');
