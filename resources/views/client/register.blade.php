@@ -12,7 +12,7 @@
                 <div class="col-lg-12">
                     <h2>Account</h2>
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Shop</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('shop') }}">Shop</a></li>
                         <li class="breadcrumb-item active">Account</li>
                     </ul>
                 </div>
