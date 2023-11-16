@@ -1,5 +1,9 @@
 @extends('client_layout.master')
 
+@section('title')
+    Checkout
+@endsection
+
 @section('content')
     <!-- Start All Title Box -->
     <div class="all-title-box">

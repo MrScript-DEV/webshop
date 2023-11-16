@@ -1,5 +1,9 @@
 @extends('client_layout.master')
 
+@section('title')
+    Home
+@endsection
+
 @section('content')
     <!-- Start Slider -->
     <div id="slides-shop" class="cover-slides">

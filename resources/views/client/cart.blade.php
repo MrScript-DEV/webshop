@@ -1,5 +1,9 @@
 @extends('client_layout.master')
 
+@section('title')
+    Cart
+@endsection
+
 @section('content')
     <!-- Start Cart  -->
     <div class="cart-box-main">
