@@ -25,3 +25,5 @@ Route::get('/signin', [ClientController::class, 'signin'])->name('signin');
 
 // Admin controller
 Route::get('/admin', [AdminController::class, 'home'])->name('admin.home');
+Route::get('/addcategory', [AdminController::class, 'addcategory'])->name('admin.addcategory');
+Route::get('/categories', [AdminController::class, 'categories'])->name('admin.categories');
