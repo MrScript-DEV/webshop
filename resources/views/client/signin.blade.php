@@ -58,7 +58,7 @@
                 <div class="col-sm-6 col-lg-6 mb-3 offset-sm-3 offset-lg-3">
                     <div class="Account-address">
                         <div class="title-left">
-                            <h3>Sign In</h3>
+                            <h3>Sign In / Don't have an account ? <a href="{{ route('register') }}">Register</a></h3>
                         </div>
                         <form class="needs-validation" >
                             <!-- <div class="row">

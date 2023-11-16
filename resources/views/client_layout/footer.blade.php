@@ -188,7 +188,7 @@
 <script src="frontend/js/jquery.superslides.min.js"></script>
 <script src="frontend/js/bootstrap-select.js"></script>
 <script src="frontend/js/inewsticker.js"></script>
-<script src="frontend/js/bootsnav.js."></script>
+<script src="frontend/js/bootsnav.js"></script>
 <script src="frontend/js/images-loded.min.js"></script>
 <script src="frontend/js/isotope.min.js"></script>
 <script src="frontend/js/owl.carousel.min.js"></script>

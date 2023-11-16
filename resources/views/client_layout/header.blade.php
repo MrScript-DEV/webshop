@@ -81,9 +81,9 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-menu">
                 <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item">
-                        <a href="shop.html" class="nav-link">SHOP</a>
+                    <li class="nav-item {{request()->routeIs('home') ? 'active' : ''}}"><a class="nav-link" href="{{ route('home') }}">Home</a></li>
+                    <li class="nav-item {{request()->routeIs('shop') ? 'active' : ''}}">
+                        <a href="{{ route('shop') }}" class="nav-link">SHOP</a>
                     </li>
                 </ul>
             </div>
@@ -125,7 +125,7 @@
                         <p>1x - <span class="price">$40.00</span></p>
                     </li>
                     <li class="total">
-                        <a href="#" class="btn btn-default hvr-hover btn-cart">VIEW CART</a>
+                        <a href="{{ route('cart') }}" class="btn btn-default hvr-hover btn-cart">VIEW CART</a>
                         <span class="float-right"><strong>Total</strong>: $180.00</span>
                     </li>
                 </ul>
