@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ClientController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,10 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Pages
+// Client controller
 Route::get('/', [ClientController::class, 'home'])->name('home');
 Route::get('/shop', [ClientController::class, 'shop'])->name('shop');
 Route::get('/cart', [ClientController::class, 'cart'])->name('cart');
 Route::get('/checkout', [ClientController::class, 'checkout'])->name('checkout');
 Route::get('/register', [ClientController::class, 'register'])->name('register');
 Route::get('/signin', [ClientController::class, 'signin'])->name('signin');
+
+// Admin controller
+Route::get('/admin', [AdminController::class, 'home'])->name('admin.home');
