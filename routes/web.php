@@ -31,3 +31,4 @@ Route::get('/addslider', [AdminController::class, 'addslider'])->name('admin.add
 Route::get('/sliders', [AdminController::class, 'sliders'])->name('admin.sliders');
 Route::get('/addproduct', [AdminController::class, 'addproduct'])->name('admin.addproduct');
 Route::get('/products', [AdminController::class, 'products'])->name('admin.products');
+Route::get('/orders', [AdminController::class, 'orders'])->name('admin.orders');
