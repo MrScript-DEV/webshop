@@ -36,7 +36,7 @@
 
     <!-- Main Sidebar Container -->
     @include('admin_layout.sidebar')
-    <!-- /.Main Sidebar Container
+    <!-- /.Main Sidebar Container -->
 
     {{-- start content --}}
     @yield('content')

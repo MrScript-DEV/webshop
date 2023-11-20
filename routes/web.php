@@ -27,3 +27,7 @@ Route::get('/signin', [ClientController::class, 'signin'])->name('signin');
 Route::get('/admin', [AdminController::class, 'home'])->name('admin.home');
 Route::get('/addcategory', [AdminController::class, 'addcategory'])->name('admin.addcategory');
 Route::get('/categories', [AdminController::class, 'categories'])->name('admin.categories');
+Route::get('/addslider', [AdminController::class, 'addslider'])->name('admin.addslider');
+Route::get('/sliders', [AdminController::class, 'sliders'])->name('admin.sliders');
+Route::get('/addproduct', [AdminController::class, 'addproduct'])->name('admin.addproduct');
+Route::get('/products', [AdminController::class, 'products'])->name('admin.products');
