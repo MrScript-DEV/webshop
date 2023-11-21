@@ -25,10 +25,10 @@ Route::get('/signin', [ClientController::class, 'signin'])->name('signin');
 
 // Admin controller
 Route::get('/admin', [AdminController::class, 'home'])->name('admin.home');
-Route::get('/addcategory', [AdminController::class, 'addcategory'])->name('admin.addcategory');
-Route::get('/categories', [AdminController::class, 'categories'])->name('admin.categories');
-Route::get('/addslider', [AdminController::class, 'addslider'])->name('admin.addslider');
-Route::get('/sliders', [AdminController::class, 'sliders'])->name('admin.sliders');
-Route::get('/addproduct', [AdminController::class, 'addproduct'])->name('admin.addproduct');
-Route::get('/products', [AdminController::class, 'products'])->name('admin.products');
-Route::get('/orders', [AdminController::class, 'orders'])->name('admin.orders');
+Route::get('/admin/addcategory', [AdminController::class, 'addcategory'])->name('admin.addcategory');
+Route::get('/admin/categories', [AdminController::class, 'categories'])->name('admin.categories');
+Route::get('/admin/addslider', [AdminController::class, 'addslider'])->name('admin.addslider');
+Route::get('/admin/sliders', [AdminController::class, 'sliders'])->name('admin.sliders');
+Route::get('/admin/addproduct', [AdminController::class, 'addproduct'])->name('admin.addproduct');
+Route::get('/admin/products', [AdminController::class, 'products'])->name('admin.products');
+Route::get('/admin/orders', [AdminController::class, 'orders'])->name('admin.orders');

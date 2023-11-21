@@ -50,7 +50,7 @@
                                     <tr>
                                         <td>1</td>
                                         <td>
-                                            <img src="backend/dist/img/user2-160x160.jpg" style="height : 50px; width : 50px" class="img-circle elevation-2" alt="User Image">
+                                            <img src="{{ asset('backend/dist/img/user2-160x160.jpg') }}" style="height : 50px; width : 50px" class="img-circle elevation-2" alt="User Image">
                                         </td>
                                         <td>Win 95+</td>
                                         <td> 4</td>
@@ -64,7 +64,7 @@
                                     <tr>
                                         <td>2</td>
                                         <td>
-                                            <img src="backend/dist/img/user2-160x160.jpg" style="height : 50px; width : 50px" class="img-circle elevation-2" alt="User Image">
+                                            <img src="{{ asset('backend/dist/img/user2-160x160.jpg') }}" style="height : 50px; width : 50px" class="img-circle elevation-2" alt="User Image">
                                         </td>
                                         <td>Win 95+</td>
                                         <td>5</td>
@@ -103,15 +103,15 @@
 @endsection
 
 @section('styles')
-    <link rel="stylesheet" href="backend/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="backend/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="{{ asset('backend/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('backend/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
 @endsection
 
 @section('scripts')
-    <script src="backend/plugins/datatables/jquery.dataTables.min.js"></script>
-    <script src="backend/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-    <script src="backend/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-    <script src="backend/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="{{ asset('backend/plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('backend/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('backend/plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('backend/plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
     <script>
         $(function () {
             $("#example1").DataTable({
