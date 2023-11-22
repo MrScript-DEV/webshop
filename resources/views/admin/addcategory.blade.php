@@ -37,11 +37,11 @@
                             </div>
                             <!-- /.card-header -->
                             <!-- form start -->
-                            <form>
+                            <form action="{{ route('admin.savecategory') }}" method="POST">
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Category name</label>
-                                        <input type="text" name="category_name" class="form-control" id="exampleInputEmail1" placeholder="Enter category">
+                                        <label for="inputCategoryName">Category name</label>
+                                        <input type="text" name="category_name" class="form-control" id="inputCategoryName" placeholder="Enter category" required>
                                     </div>
                                 </div>
                                 <!-- /.card-body -->

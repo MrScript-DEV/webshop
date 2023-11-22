@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ClientController;
 use Illuminate\Support\Facades\Route;
 
@@ -32,3 +33,6 @@ Route::get('/admin/sliders', [AdminController::class, 'sliders'])->name('admin.s
 Route::get('/admin/addproduct', [AdminController::class, 'addproduct'])->name('admin.addproduct');
 Route::get('/admin/products', [AdminController::class, 'products'])->name('admin.products');
 Route::get('/admin/orders', [AdminController::class, 'orders'])->name('admin.orders');
+
+// Category controller
+Route::post('admin/savecategory', [CategoryController::class, 'savecategory'])->name('admin.savecategory');
