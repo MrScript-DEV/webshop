@@ -35,9 +35,16 @@
                             <div class="card-header">
                                 <h3 class="card-title">Add category</small></h3>
                             </div>
+                            @if(Session::has('status'))
+                                <br/>
+                                <div class="alert alert-success">
+                                    {{ Session::get('status') }}
+                                </div>
+                            @endif
                             <!-- /.card-header -->
                             <!-- form start -->
                             <form action="{{ route('admin.savecategory') }}" method="POST">
+                                @csrf
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="inputCategoryName">Category name</label>
