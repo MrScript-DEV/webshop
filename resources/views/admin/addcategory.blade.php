@@ -36,7 +36,6 @@
                                 <h3 class="card-title">Add category</small></h3>
                             </div>
                             @if(Session::has('status'))
-                                <br/>
                                 <div class="alert alert-success">
                                     {{ Session::get('status') }}
                                 </div>

@@ -33,6 +33,11 @@
                             <div class="card-header">
                                 <h3 class="card-title">All categories</h3>
                             </div>
+                            @if(Session::has('status'))
+                                <div class="alert alert-success">
+                                    {{ Session::get('status') }}
+                                </div>
+                            @endif
                             <!-- /.card-header -->
                             <div class="card-body">
                                 <table id="example1" class="table table-bordered table-striped">
@@ -44,26 +49,23 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Internet
-                                            Explorer 4.0
-                                        </td>
-                                        <td>
-                                            <a href="#" class="btn btn-primary"><i class="nav-icon fas fa-edit"></i></a>
-                                            <a href="#" id="delete" class="btn btn-danger" ><i class="nav-icon fas fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Internet
-                                            Explorer 5.0
-                                        </td>
-                                        <td>
-                                            <a href="#" class="btn btn-primary"><i class="nav-icon fas fa-edit"></i></a>
-                                            <a href="#" id="delete" class="btn btn-danger" ><i class="nav-icon fas fa-trash"></i></a>
-                                        </td>
-                                    </tr>
+                                    @foreach($categories as $key => $category)
+                                        <tr>
+                                            <td>{{ $key + 1 }}</td>
+                                            <td>{{ $category->category_name }}</td>
+                                            <td>
+                                                <a href="#" class="btn btn-primary"><i class="nav-icon fas fa-edit"></i></a>
+
+                                                <form action="{{ route('admin.deletecategory', ['id' => $category->id]) }}" method="POST">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="submit" id="delete" class="btn btn-danger">
+                                                        <i class="nav-icon fas fa-trash"></i>
+                                                    </button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    @endforeach
                                     </tbody>
                                     <tfoot>
                                     <tr>

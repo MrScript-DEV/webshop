@@ -18,21 +18,22 @@ use Illuminate\Support\Facades\Route;
 
 // Client controller
 Route::get('/', [ClientController::class, 'home'])->name('home');
-Route::get('/shop', [ClientController::class, 'shop'])->name('shop');
-Route::get('/cart', [ClientController::class, 'cart'])->name('cart');
-Route::get('/checkout', [ClientController::class, 'checkout'])->name('checkout');
-Route::get('/register', [ClientController::class, 'register'])->name('register');
-Route::get('/signin', [ClientController::class, 'signin'])->name('signin');
+Route::get('shop', [ClientController::class, 'shop'])->name('shop');
+Route::get('cart', [ClientController::class, 'cart'])->name('cart');
+Route::get('checkout', [ClientController::class, 'checkout'])->name('checkout');
+Route::get('register', [ClientController::class, 'register'])->name('register');
+Route::get('signin', [ClientController::class, 'signin'])->name('signin');
 
 // Admin controller
-Route::get('/admin', [AdminController::class, 'home'])->name('admin.home');
-Route::get('/admin/addcategory', [AdminController::class, 'addcategory'])->name('admin.addcategory');
-Route::get('/admin/categories', [AdminController::class, 'categories'])->name('admin.categories');
-Route::get('/admin/addslider', [AdminController::class, 'addslider'])->name('admin.addslider');
-Route::get('/admin/sliders', [AdminController::class, 'sliders'])->name('admin.sliders');
-Route::get('/admin/addproduct', [AdminController::class, 'addproduct'])->name('admin.addproduct');
-Route::get('/admin/products', [AdminController::class, 'products'])->name('admin.products');
-Route::get('/admin/orders', [AdminController::class, 'orders'])->name('admin.orders');
+Route::get('admin', [AdminController::class, 'home'])->name('admin.home');
+Route::get('admin/addcategory', [AdminController::class, 'addcategory'])->name('admin.addcategory');
+Route::get('admin/categories', [AdminController::class, 'categories'])->name('admin.categories');
+Route::get('admin/addslider', [AdminController::class, 'addslider'])->name('admin.addslider');
+Route::get('admin/sliders', [AdminController::class, 'sliders'])->name('admin.sliders');
+Route::get('admin/addproduct', [AdminController::class, 'addproduct'])->name('admin.addproduct');
+Route::get('admin/products', [AdminController::class, 'products'])->name('admin.products');
+Route::get('admin/orders', [AdminController::class, 'orders'])->name('admin.orders');
 
 // Category controller
 Route::post('admin/savecategory', [CategoryController::class, 'savecategory'])->name('admin.savecategory');
+Route::delete('admin/deletecategory/{id}', [CategoryController::class, 'deletecategory'])->name('admin.deletecategory');

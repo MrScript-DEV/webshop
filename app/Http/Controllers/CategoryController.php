@@ -14,4 +14,11 @@ class CategoryController extends Controller
         $category->save();
         return back()->with('status', 'Your category has been created');
     }
+
+    public function deletecategory($id){
+        $category = Category::find($id);
+        $category->delete();
+
+        return back()->with('status', 'Your category has been deleted');
+    }
 }
