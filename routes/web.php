@@ -37,3 +37,5 @@ Route::get('admin/orders', [AdminController::class, 'orders'])->name('admin.orde
 // Category controller
 Route::post('admin/savecategory', [CategoryController::class, 'savecategory'])->name('admin.savecategory');
 Route::delete('admin/deletecategory/{id}', [CategoryController::class, 'deletecategory'])->name('admin.deletecategory');
+Route::get('admin/editcategory/{id}', [CategoryController::class, 'editcategory'])->name('admin.editcategory');
+Route::put('admin/updatecategory/{id}', [CategoryController::class, 'updatecategory'])->name('admin.updatecategory');

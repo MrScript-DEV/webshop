@@ -54,7 +54,7 @@
                                             <td>{{ $key + 1 }}</td>
                                             <td>{{ $category->category_name }}</td>
                                             <td>
-                                                <a href="#" class="btn btn-primary"><i class="nav-icon fas fa-edit"></i></a>
+                                                <a href="{{ route('admin.editcategory', ['id' => $category->id]) }}" class="btn btn-primary"><i class="nav-icon fas fa-edit"></i></a>
 
                                                 <form action="{{ route('admin.deletecategory', ['id' => $category->id]) }}" method="POST">
                                                     @csrf
